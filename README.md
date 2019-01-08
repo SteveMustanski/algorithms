@@ -11,6 +11,7 @@ examples.  This repo contains those examples written in javascript.
 * binarySearch.js - implements a binary search function to find the index of a target within an array.
 * recursiveBinarySearch.js - implements a binary search function that uses recursion to find the target within an array.
 * arrays.js - examples of common array operations.
+* linkedList.js - builds out an example of a linked list.
 
 ## Running the examples
 
