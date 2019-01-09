@@ -63,8 +63,8 @@ class LinkedList {
 
   // finds the index of element 
   indexOf(data) {
-    var count = 0;
-    var current = this.head;
+    let count = 0;
+    let current = this.head;
 
     // iterae over the list 
     while (current != null) {
@@ -79,13 +79,38 @@ class LinkedList {
     // not found 
     return -1;
   }
+
+  // returns the first found key or null if not fount
+  search(key) {
+    let current = this.head;
+
+    while (current != null) {
+      // compare each element of the list 
+      // with given element 
+      if (current.data === key) {
+
+        return current.data;
+      } else {
+        current = current.next;
+      }
+
+      // not found 
+      return null;
+    }
+  }
 }
-let list = new LinkedList();
-console.log(list.isEmpty());
+
+
+// code to execute/test the code
+
+let list = new LinkedList(); // creates a new linked list
+console.log(list.isEmpty()); // returns true
 list.add(10);
-list.sizeOfList();
-console.log(list.isEmpty());
+list.sizeOfList(); // returns 1
+console.log(list.isEmpty());  // returns false since list is not empty
 list.printList();
 list.add(11);
-list.sizeOfList();
-list.printList();
+list.sizeOfList(); //returns 2
+list.printList(); 
+console.log(list.search(10)); // returns the found data, in this case 10
+console.log(list.search(12)); // returns null as 12 doesn't exist
