@@ -98,7 +98,43 @@ class LinkedList {
       return null;
     }
   }
+  // insert element at the position index 
+  // of the list 
+  insertAt(element, index) {
+    if (index > 0 && index > this.size)
+      return false;
+    else {
+      // creates a new node 
+      let node = new Node(element);
+      let current, prev;
+
+      current = this.head;
+
+      // add the element to the first index if specified
+      if (index == 0) {
+        node.next = head;
+        this.head = node;
+      } else {
+        current = this.head;
+        let it = 0;
+
+        // iterate over the list to find position
+        while (it < index) {
+          it++;
+          prev = current;
+          current = current.next;
+        }
+
+        // adding an element 
+        node.next = current;
+        prev.next = node;
+      }
+      this.size++;
+    }
+  }
+
 }
+
 
 
 // code to execute/test the code
@@ -111,6 +147,8 @@ console.log(list.isEmpty());  // returns false since list is not empty
 list.printList();
 list.add(11);
 list.sizeOfList(); //returns 2
-list.printList(); 
+list.printList();
 console.log(list.search(10)); // returns the found data, in this case 10
 console.log(list.search(12)); // returns null as 12 doesn't exist
+list.insertAt(12, 1);
+list.printList(); //returns 10, 12, 11
