@@ -133,9 +133,31 @@ class LinkedList {
     }
   }
 
+  // removes a given element 
+  removeElement(element) {
+    var current = this.head;
+    var prev = null;
+
+    // iterate over the list 
+    while (current != null) {
+      // comparing element with current element 
+      //if found then remove and return true 
+      if (current.data === element) {
+        if (prev == null) {
+          this.head = current.next;
+        } else {
+          prev.next = current.next;
+        }
+        this.size--;
+        return current.data;
+      }
+      prev = current;
+      current = current.next;
+    }
+    return -1;
+  }
+
 }
-
-
 
 // code to execute/test the code
 
@@ -152,3 +174,5 @@ console.log(list.search(10)); // returns the found data, in this case 10
 console.log(list.search(12)); // returns null as 12 doesn't exist
 list.insertAt(12, 1);
 list.printList(); //returns 10, 12, 11
+list.removeElement(12);
+list.printList(); // returns 10, 11
