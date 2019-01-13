@@ -12,6 +12,7 @@ examples.  This repo contains those examples written in javascript.
 * recursiveBinarySearch.js - implements a binary search function that uses recursion to find the target within an array.
 * arrays.js - examples of common array operations.
 * linkedList.js - builds out an example of a linked list and common operations.
+* bogoSort.js - randomly reshuffles an array until it is sorted (probably the worst way to do a sort).
 
 ## Running the examples
 
