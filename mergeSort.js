@@ -47,7 +47,7 @@ function verifySort(arr) {
 }
 
 // run the mergesort on an unsorted array
-const unsortedArray = [7, 3, 2, 8, 4, 1, 5, 9, 6, 10];
+const unsortedArray = [30, 103, 1, 5, 27, 31, 86, 6, 48, 70, 45, 4, 60];
 console.log(`unsorted: ${unsortedArray}`);
 let sortedArray = mergeSort(unsortedArray);
 console.log(`sorted: ${sortedArray}`);
