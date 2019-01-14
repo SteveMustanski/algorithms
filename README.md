@@ -13,6 +13,7 @@ examples.  This repo contains those examples written in javascript.
 * arrays.js - examples of common array operations.
 * linkedList.js - builds out an example of a linked list and common operations.
 * bogoSort.js - randomly reshuffles an array until it is sorted (probably the worst way to do a sort).
+* selectionSort.js - loops through finding the min value of an array and pops it to the sorted array.
 
 ## Running the examples
 
