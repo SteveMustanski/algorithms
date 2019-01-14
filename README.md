@@ -12,8 +12,10 @@ examples.  This repo contains those examples written in javascript.
 * recursiveBinarySearch.js - implements a binary search function that uses recursion to find the target within an array.
 * arrays.js - examples of common array operations.
 * linkedList.js - builds out an example of a linked list and common operations.
+* mergeSort.js - uses a sort algorithm that calls itself recursively to split and compare arrays in order to sort an array.
 * bogoSort.js - randomly reshuffles an array until it is sorted (probably the worst way to do a sort).
 * selectionSort.js - loops through finding the min value of an array and pops it to the sorted array.
+* quickSort.js - recursively pick the first item in an array and make two sub arrays of values greater and less than the first.  Merge them back to get the sorted arrary.
 
 ## Running the examples
 
