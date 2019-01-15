@@ -16,6 +16,7 @@ examples.  This repo contains those examples written in javascript.
 * bogoSort.js - randomly reshuffles an array until it is sorted (probably the worst way to do a sort).
 * selectionSort.js - loops through finding the min value of an array and pops it to the sorted array.
 * quickSort.js - recursively pick the first item in an array and make two sub arrays of values greater and less than the first.  Merge them back to get the sorted arrary.
+* binaryNameSearch.js - does a binary search that return the index from an array of sorted strings.
 
 ## Running the examples
 
