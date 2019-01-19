@@ -1,3 +1,5 @@
+// executes a binary search to find a name in a list
+
 function indexOfItem(arr, target) {
   var first = 0;
   var last = arr.length - 1;

@@ -1,3 +1,4 @@
+// binary search for a number in a sorted array
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -18,6 +19,7 @@ function binarySearch(list, target) {
   return -1;
 }
 
+// function that verifies the search is working
 function verify(index) {
   if (index >= 0) {
     console.log(`target was found at index: ${index}`);

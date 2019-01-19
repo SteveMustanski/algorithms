@@ -1,3 +1,5 @@
+// searches through array items one at a time to find the target
+
 const numbers = [1,2,3,4,5,6,7,8,9,10];
 
 function linearSearch(list, target) {

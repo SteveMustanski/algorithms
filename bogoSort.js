@@ -24,7 +24,7 @@ function isSorted(arr) {
   }
   return true;
 }
-// Shuffles until sorted.
+// randomly shuffles array until it is sorted.
 function bogoSort(arr) {
   let loops = 0;
   while (isSorted(arr) == false) {
